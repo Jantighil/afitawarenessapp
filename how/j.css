@@ -1,47 +1,53 @@
 /* Add your attractive blue theme */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #a8e0fc;
-  }
-  .content{
-    display: flex;
-    background-color: rgb(250, 253, 253);
-  }
-  /* Style your header, footer, and main sections */
-  header, footer, main {
-    padding: 20px;
-    background-color: #ffffff;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Style your quiz form */
-  form {
-    padding: 20px;
-    background-color: #f7fafc;
-    border-radius: 10px;
-  }
-  
-  /* Style your buttons */
-  button[type="submit"], .next, .prev {
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  /* Hover effects */
-  button[type="submit"]:hover, .next:hover, .prev:hover {
-    background-color: #45a049;
-  }
-  
-  /* Attractive slide section */
-  /* .slider {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #a8e0fc;
+}
+.content {
+  display: flex;
+  background-color: rgb(250, 253, 253);
+}
+/* Style your header, footer, and main sections */
+header,
+footer,
+main {
+  padding: 20px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style your quiz form */
+form {
+  padding: 20px;
+  background-color: #f7fafc;
+  border-radius: 10px;
+}
+
+/* Style your buttons */
+button[type="submit"],
+.next,
+.prev {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover effects */
+button[type="submit"]:hover,
+.next:hover,
+.prev:hover {
+  background-color: #45a049;
+}
+
+/* Attractive slide section */
+/* .slider {
     display: flex;
     overflow-x: auto;
   }
@@ -51,103 +57,101 @@ body {
     padding: 20px;
     display: none;
   } */
-  
-  .active {
-    display: block;
-  }
 
-  .quiz-section {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: -350px;
-  }
+.active {
+  display: block;
+}
 
-  .question {
-    display: none;
-  }
-  #quizform{
-    background-color: #99dbfc;
+.quiz-section {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: -350px;
+}
 
-  }
-  form{
-    background-color: #9fdfff;
-  }
+.question {
+  display: none;
+}
+#quizform {
+  background-color: #99dbfc;
+}
+form {
+  background-color: #9fdfff;
+}
 
-  /* Styles for buttons */
-  button {
-    padding: 10px 20px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #5E5E0B;
-    color: #fff;
-    transition: background-color 0.3s ease;
-  }
+/* Styles for buttons */
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #5e5e0b;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
 
-  button:hover {
-    background-color: #3f3f00;
-  }
+button:hover {
+  background-color: #3f3f00;
+}
 
-  /* Greenish hover effect for questions */
-  .question p:hover {
-    color: #0F5D85;
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-  .video-section {
-    float: left;
-    width: 60%;
-    height: 600px;
-    margin-top: -200px;
-    margin-left: 8%;
-  }
-  
-  .awareness-section {
-    float: right;
-    width: 40%;
-    height: 600px;
-    overflow: hidden;
-    margin-right: 8%;
-  }
-  .navbar{
+/* Greenish hover effect for questions */
+.question p:hover {
+  color: #0f5d85;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.video-section {
+  float: left;
+  width: 60%;
+  height: 600px;
+  margin-top: -200px;
+  margin-left: 8%;
+}
+
+.awareness-section {
+  float: right;
+  width: 40%;
+  height: 600px;
+  overflow: hidden;
+  margin-right: 8%;
+}
+.navbar {
   display: flex;
   justify-content: center;
-  }
+}
 
-  /* .nav-links{
+/* .nav-links{
     display: flex;
   } */
 
-  /* .o{
+/* .o{
     margin-left: 10px;
   } */
-  .slider {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  /* .q{
+.slider {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+/* .q{
     margin-right:10px ;
   } */
-  .r{
-    justify-content: center;
-    padding-left: 20%;
-  }
-  
-  .slide {
-    height: 100%;
-    padding: 20px;
-    display: none;
-  }
-  
-  .slide.active {
-    display: block;
-  }
-  
+.r {
+  justify-content: center;
+  padding-left: 20%;
+}
+
+.slide {
+  height: 100%;
+  padding: 20px;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
