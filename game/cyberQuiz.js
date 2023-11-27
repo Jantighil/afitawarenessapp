@@ -1,20 +1,10 @@
 // Slide through images every 20 minutes
-let currentSlide = 0;
-const slides = document.querySelectorAll(".slide");
-
-function showSlide() {
-  slides.forEach((slide) => (slide.style.display = "none"));
-  currentSlide = (currentSlide + 1) % slides.length;
-  slides[currentSlide].style.display = "block";
-}
-
-setInterval(showSlide, 1000); // 20 minutes
 
 // Dynamic question display
 // JavaScript to control the quiz
 
 document.addEventListener("DOMContentLoaded", function () {
-  const questions = document.querySelectorAll(".question");
+  const questions = document.querySelectorAll(".cyberQuestion");
   let currentQuestion = 0;
   let correctAnswers = 0;
 
@@ -51,9 +41,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function getCorrectAnswer(questionIndex) {
     const correctAnswersMap = {
-      0: "b",
-      1: "c",
-      2: "b",
+      0: "c",
+      1: "b",
+      2: "c",
       3: "c",
       4: "c",
     };
@@ -64,8 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const userAnswers = validateAnswers();
     if (correctAnswers === questions.length) {
       alert("Congratulations! You answered all questions correctly!");
-
-      window.location.href = "i.html"; // Redirect to the success page
     } else {
       alert(
         "Oops! You did not answer all questions correctly. Please retake the quiz."
@@ -76,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  document.querySelectorAll(".next").forEach((button) => {
+  document.querySelectorAll(".cyberNext").forEach((button) => {
     button.addEventListener("click", function () {
       if (currentQuestion < questions.length - 1) {
         currentQuestion++;
@@ -85,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  document.querySelectorAll(".prev").forEach((button) => {
+  document.querySelectorAll(".cyberPrev").forEach((button) => {
     button.addEventListener("click", function () {
       if (currentQuestion > 0) {
         currentQuestion--;
@@ -95,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document
-    .getElementById("quizForm")
+    .getElementById("cyberForm")
     .addEventListener("submit", function (event) {
       event.preventDefault(); // Prevent default form submission behavior
       showResultPage();
