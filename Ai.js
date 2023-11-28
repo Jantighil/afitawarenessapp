@@ -2,6 +2,9 @@ import { config } from "dotenv";
 import { OpenAI } from "openai";
 config();
 
+// const textArea = document.getElementById("generate-text");
+// const generateButton = document.getElementById("generateClimate");
+
 const ai = new OpenAI({ apikey: process.env.OPENAI_API_KEY });
 
 async function chatBot(prompt) {
@@ -29,4 +32,6 @@ async function main(prompt) {
   console.log(response);
 }
 
-main("What is cyberSecurity?");
+// textArea.innerHTML = "Helo";
+
+export default main;
