@@ -8,7 +8,7 @@ function showSlide() {
   slides[currentSlide].style.display = 'block';
 }
 
-setInterval(showSlide, 10000); // 20 minutes
+setInterval(showSlide, 1000); // 20 minutes
 
 // Dynamic question display
 // JavaScript to control the quiz
@@ -51,9 +51,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function getCorrectAnswer(questionIndex) {
     const correctAnswersMap = {
-      0: 'c',
-      1: 'b',
-      2: 'c',
+      0: 'b',
+      1: 'c',
+      2: 'b',
       3: 'c',
       4: 'c'
     };
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (correctAnswers === questions.length) {
       alert('Congratulations! You answered all questions correctly!');
       
-      window.location.href = '/main/how/how.html'; // Redirect to the success page
+      window.location.href = '/main/i.html'; // Redirect to the success page
     } else {
       alert('Oops! You did not answer all questions correctly. Please retake the quiz.');
       currentQuestion = 0;
