@@ -240,3 +240,30 @@ body{
   
   
   
+
+  @media only screen and (max-width: 320px) {
+
+.i{
+  padding-top: 20%;
+  font-size: 100%;
+}
+   .sum{
+    padding-top: 10%;
+    margin-right: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 80%;
+   }   
+   .b{
+    font-size: 60% ;
+    padding-left: -90%;
+        }
+        .ii{
+          font-size: 70%;
+        }
+        .gameover{
+          font-size: 100%;
+          padding-left: 20%;
+        }
+    }
+   

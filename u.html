@@ -6,29 +6,41 @@
   <title>Climate Change Awareness</title>
   <link rel="stylesheet" href="/main/u.css">
   <style>
-    .video_container{
+    /* .video_container{
       height: 550px;
       width: 748px;
       max-width: 800px;
       max-height: 700px;
-     }
+     } */
      .hero_video {
       width: 60%;
       height: 400%;
       height: 600px;
+      /* margin-top: 5%; */
+      /* border-radius: 500px; */
+      
      }
+     /* .chat-container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px; */
+    /* } */
   </style>
 </head>
 <body>
+  <canvas class="animated-background" id="background"></canvas>
   <header>
     <nav class="navbar">
-      <img style="height: 40px; margin-top: 1.5%;" src="/main/AFIT.png" alt="">
+      <img style="height: 60px; margin-top: 1%;" href="/main/main.html" src="/main/AFIT.png" alt="">
     <div class="logo">
       <h1>Climate Awareness</h1>
     </div>
     <ul class="nav-links">
-      <li><a href="#video">Video</a></li>
-      <li><a href="#quiz">Quiz</a></li>
+      <li class="i"><a href="#video">Video</a></li>
+      <li class="i"><a href="#quiz">Quiz</a></li>
     </ul>
   </nav>
   </header>
@@ -122,6 +134,14 @@
             <button type="submit">Submit Quiz</button>
           </div>
         </form>
+        <div class="chat-container">
+          <!-- <iframe
+            title="OpenAI Chatbot"
+            allow="microphone;"
+            src="https://platform.openai.com/chatbox/demos/climate-change-awareness"
+            style="width: 100%; height: 500px; border: none;"
+          ></iframe> -->
+
       </div>
   </main>
   
@@ -133,6 +153,23 @@
       </div>
     </div>
   </footer>
+  <script>
+    const chatWidget = new OpenAIAIWidget.OpenAIAIWidget({
+  token: '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', // Replace this with your OpenAI API key
+  model: 'gpt-3.5-turbo', // Change the model if needed
+  placeholder: 'Type your message here...',
+  expandable: true,
+  messages: [
+    {
+      role: 'user',
+      content: 'Hello, what can you tell me about climate change?',
+    },
+  ],
+});
+
+// Mount the widget container
+document.getElementById('ai-widget-container').appendChild(chatWidget.render());
+  </script>
   
 
   <script src="/main/u.js"></script>

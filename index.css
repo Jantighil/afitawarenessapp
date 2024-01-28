@@ -1,0 +1,353 @@
+@import url(/main/Agbalumo-Regular.ttf);
+.animated-background {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+/* display: flex; */
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #9accff;
+position: fixed;
+position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  z-index: -1;
+  pointer-events: none; 
+}
+#i{
+display: flex;
+margin: 0;
+padding: 0;
+/* display: flex; */
+justify-content: center;
+align-items: center;
+height: 97.5vh;
+background-color: #daebfd;
+overflow: hidden;
+}
+section{
+    display: flex;
+}
+.container {
+text-align: center;
+background-color: #9accff;
+padding: 30px;
+border-radius: 8px;
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+/* width: 50%; */
+
+}
+
+.container :hover{
+color: rgb(124, 61, 61);
+}
+button{
+clear: both;
+}
+
+h1 {
+font-size: 36px;
+color: #333;
+margin-bottom: 20px;
+}
+
+button {
+padding: 10px 20px;
+margin: 10px;
+font-size: 16px;
+cursor: pointer;
+border: none;
+border-radius: 5px;
+background-color: #1E90FF;
+color: #fff;
+transition: background-color 0.3s ease;
+}
+
+button:hover {
+background-color: #0066cc;
+}
+
+.button-container {
+display: flex;
+justify-content: center;
+}
+/* ...existing styles... */
+
+/* Navigation Styles */
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+background-color: #1E90FF;
+color: #fff;
+}
+
+.logo h1 {
+margin: 0;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+}
+
+.nav-links li {
+margin: 0 10px;
+}
+
+.nav-links li a {
+text-decoration: none;
+color: #fff;
+transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+color: #0066cc;
+}
+.animated-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none; /* Ensure the background doesn't interfere with content */
+}
+
+
+.burger-menu {
+display: none;
+cursor: pointer;
+font-size: 24px;
+color: #fff;
+margin-right: 15px;
+}
+
+.menu-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.7);
+z-index: 2;
+display: none;
+}
+
+.menu-list {
+list-style: none;
+padding: 20px;
+text-align: center;
+}
+
+.menu-list li {
+margin: 15px 0;
+}
+.hero_videos{
+    display: none;
+  }
+  .ii{
+    display: none;
+  } 
+/* ... Your existing styles ... */
+
+/* Media query for tablet and larger screens */
+ @media only screen and (max-width: 1024px) {
+body {
+font-size: 14px;
+}
+
+.container {
+padding: 20px;
+}
+
+.nav-links {
+display: none;
+}
+
+.burger-menu {
+display: block;
+}
+
+.button-container {
+flex-direction: column;
+}
+
+button {
+margin: 10px 0;
+}
+
+.menu-list {
+position: absolute;
+top: 60px;
+left: 0;
+right: 0;
+}
+
+.menu-overlay {
+display: none;
+} 
+/* .container {
+    text-align: center;
+    background-color: #9accff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    
+    } */
+}
+
+/* Media query for smartphone screens */
+@media only screen and (max-width: 480px) {
+ body {
+font-size: 12px;
+} 
+/* .i{
+display: none;
+} */
+
+
+ 
+.nav-links,
+.burger-menu {
+display: none;
+}
+
+.button-container {
+flex-direction: column;
+}
+
+button {
+margin: 10px 0;
+}
+
+.menu-list {
+position: absolute;
+top: 60px;
+left: 0;
+right: 0;
+}
+
+.menu-overlay {
+display: none;
+}
+.cursor-particle {
+  position: absolute;
+  background-color: #1E90FF;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+} 
+@media only screen and (max-width: 320px) {
+
+ body {
+font-size: 12px;
+}
+@import url(/main/Agbalumo-Regular.ttf);
+.animated-background {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0; 
+/* display: flex; */
+ justify-content: center; 
+align-items: center;
+height: 100vh;
+background-color: #d4e8fc;
+position: fixed;
+position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none; 
+}
+#i{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0; 
+    /* display: flex;  */
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100%;
+    background-color: #daebfd;
+    }
+    
+.p{   
+display: none;
+}
+.logo{
+    display: flex;
+    width: 230.5px;
+    padding-top: -100px;
+    box-shadow: #050505;
+}
+.q{
+    padding-top: 15px;
+    font-size: 30px;
+}
+
+
+.container {
+    box-shadow: #050505;
+margin-top: 8%;
+}
+
+.nav-links {
+display: none;
+}
+
+.burger-menu {
+display: block;
+padding-top: -20%;
+}
+.button-container {
+flex-direction: column;
+}
+
+button {
+margin: 10px 0;
+}
+
+.menu-list {
+position: absolute;
+top: 60px;
+left: 0;
+right: 0;
+}
+
+.menu-overlay {
+display: none;
+}
+.cursor-particle {
+  position: absolute;
+  background-color: #1E90FF;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1;
+} 
+ .container {
+    text-align: center;
+    background-color: #9accff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    } 
+    .ii{
+        height: 90px;
+        display: block;
+    }
+}
+/* .burger-menu{
+display: none;
+ }  

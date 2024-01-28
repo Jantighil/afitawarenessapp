@@ -8,7 +8,7 @@ function showSlide() {
   slides[currentSlide].style.display = 'block';
 }
 
-setInterval(showSlide, 1000); // 20 minutes
+setInterval(showSlide, 10000); // 20 minutes
 
 // Dynamic question display
 // JavaScript to control the quiz
@@ -99,3 +99,38 @@ document.addEventListener('DOMContentLoaded', function () {
 
   showQuestion(currentQuestion);
 });
+// const AI_SECRET_KEY = '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'; // Replace this with your actual AI key
+
+//     const sendUserMessage = async () => {
+//       const userInput = document.getElementById('user-input').value;
+
+//       try {
+//         // Make a POST request to the AI service using the key (not recommended)
+//         const response = await fetch('https://api.example.com/ai-interaction', {
+//           method: 'POST',
+//           headers: {
+//             'Content-Type': 'application/json',
+//             'Authorization': `Bearer ${AI_SECRET_KEY}` // Pass the key in the request header
+//           },
+//           body: JSON.stringify({ userInput }),
+//         });
+
+//         if (response.ok) {
+//           const data = await response.json();
+//           displayAIResponse(data.response);
+//         } else {
+//           throw new Error('Failed to get AI response');
+//         }
+//       } catch (error) {
+//         console.error(error);
+//         // Handle error
+//       }
+//     };
+
+//     const displayAIResponse = (response) => {
+//       const chatBox = document.getElementById('chat-box');
+//       const message = document.createElement('p');
+//       message.textContent = response;
+//       chatBox.appendChild(message);
+//     };
+

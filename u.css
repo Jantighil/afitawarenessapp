@@ -1,10 +1,21 @@
-/* Add your attractive blue theme */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #a8e0fc;
-  }
+.animated-background {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #9accff;
+  position: fixed;
+  position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none; 
+}
   .content{
     display: flex;
     background-color: rgb(250, 253, 253);
@@ -118,6 +129,17 @@ body {
   display: flex;
   justify-content: center;
   }
+  /* .video_container{
+    height: 600px;
+    width: 1000px;
+    max-width: 1000px;
+    max-height: 1000px;
+   }
+   .hero_video {
+    width: 150%;
+    height: 400%;
+    height: 600px;
+   } */
 
   /* .nav-links{
     display: flex;
@@ -151,3 +173,43 @@ body {
     display: block;
   }
   
+  @media only screen and (max-width: 320px) {
+    .slide h3 p{
+     display: none;
+   }
+   /* .video_container{
+         
+        } */
+        .hero_video {
+          min-width: 150%;
+            width: 150%;
+            height: 600%;
+            height: 600px;
+
+        }
+         /* .video-section{
+          padding-right: 75%;
+           padding-left: -50%; 
+         }   */
+       
+     
+   .awareness-section {
+      display: none;
+     }
+   .i{
+     display: none;
+   }
+   .quiz-section {
+       max-width: 800px;
+       margin: 20px auto;
+       background-color: #fff;
+       padding: 20px;
+       border-radius: 8px;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       margin-top: -230px;
+     }
+   .navbar h1{
+     font-size: 120%;
+   }
+   
+   }

@@ -8,7 +8,7 @@ function showSlide() {
   slides[currentSlide].style.display = 'block';
 }
 
-setInterval(showSlide, 1000); // 20 minutes
+setInterval(showSlide, 10000); // 20 minutes
 
 // Dynamic question display
 // JavaScript to control the quiz
